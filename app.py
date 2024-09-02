@@ -59,6 +59,11 @@ if "messages" not in st.session_state:
 # Transform messages to the expected format
 st.balloons()
 st.markdown('<div class="center-text">Hello, I\'m <span class="highlight">Keath.<span>👨‍💻</div>', unsafe_allow_html=True)
+with st.popover("ℹ️"):
+    st.write("Try asking me anything about Keath :) (his experiences in the it field , hobbies, or even his personal projects)")
+    st.write("Prompt example:  Give me a rundown on keath's experience in the IT industry")
+    st.write("‼️ sometimes the chatbot does not return the correct response because gemini is 💩 hehe sorry")
+    st.write("so if that happens just repeat the prompt 😁")
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
@@ -66,6 +71,8 @@ for message in st.session_state.messages:
 
 # Accept user input
 st.markdown('<div class="center-text">', unsafe_allow_html=True)
+
+
 if prompt := st.chat_input("Ask me anything about my creator :)"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})

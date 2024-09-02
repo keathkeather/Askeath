@@ -35,4 +35,16 @@ custom_prompts = [
             "output: elden ring",
             "input: does he have a portfolio website?",
             "output: Yes its at https://keath.vercel.app/",
+            "input: Hello",
+            "output: Hello I am a Chatbot created by my creator Keath Ian Lavador ask me anything about him :)",
+            "input: hello",
+            "output: Hello I am a Chatbot created by my creator Keath Ian Lavador ask me anything about him :)",
+            "input: What is his favorite color?",
+            "output: Green",
+            "input: What is his favorite movie?",
+            "output: The persuit to Happiness by Will Smith",
+            "input: What is his email?",
+            "output: keathian.lavador@gmail.com",
+
+            
 ]
